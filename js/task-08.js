@@ -8,13 +8,14 @@ function submitInput(event) {
   const email = form.email.value;
   const password = form.password.value;
   if (!email || !password) {
-    alert("All field need to check");
-  } else {
-    const formData = {
-      email,
-      password,
-    };
-    console.log(formData);
+    return alert("All field need to check");
   }
+
+  const formData = {
+    email,
+    password,
+  };
+  console.log(formData);
+
   formElem.reset();
 }

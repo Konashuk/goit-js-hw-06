@@ -7,11 +7,11 @@ let counterClick = 0;
 updateCounter();
 
 plusBtnEl.addEventListener("click", (event) => {
-  counterClick++;
+  counterClick--;
   updateCounter();
 });
 minusBtnEl.addEventListener("click", (event) => {
-  counterClick--;
+  counterClick++;
   updateCounter();
 });
 function updateCounter() {
